@@ -1,4 +1,4 @@
-# An (Explainable) Clinical LLM for Disease Prediction (from Multimodal Data)
+# Multi-modal ViT on Large-scale Clinic Data
 
 <br>
 
@@ -6,7 +6,7 @@
 
 ```
 2D-UKBiobank/
-├── src/                # C++ source code
+├── src/                
 │   ├── main.cpp
 │   ├── preprocess.cpp
 │   ├── model.cpp
