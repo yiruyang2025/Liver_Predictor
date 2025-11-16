@@ -1,4 +1,4 @@
-# Multi-modal ViT on Large-scale Clinic Data
+# Multi-modal ViT on Large-scale 3D Clinic Data
 
 <br>
 
