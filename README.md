@@ -35,6 +35,8 @@ supervisors: ViT author Xiaohua Zhai学长 if available, prof. Davide Scaramuzza
 
 > To address the above fundamental wrongness, we propose ★MedNet as multimodal ViT backbone for real-world bio signal processing.
 
+<br>
+
 > Datasets, `Google / meta’s research glasses`<br>
 > UKB-RAP, https://www.ukbiobank.ac.uk/use-our-data/research-analysis-platform/, ukbiobank tier 1, 2D<br>
 
