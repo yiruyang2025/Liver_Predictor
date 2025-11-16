@@ -23,12 +23,15 @@ supervisors: prof. Davide Scaramuzza, Dr. Wei Wei, Dr. Yong Wang<br>
 
 ## Abstract
 
-LLM stands for Discrete Symbolic Model, but images/depth/point clouds/continuous signals are data in continuous space.<br>
-Forcibly tokenizing continuous space into LLM is incorrect from an information theory perspective. The traditional transformer can only deal with softmax(QKᵀ)V for the information output. <br>
-Fusion Transformer in latent-to-latent for ViT/other cv feature extractor to language tokens alignment. Use Continuous Encoder → Fake Token → Attention Trick to make LLM see the failure of continuous information but still effectively hack it.<br>
-It's like turning an image into 6 random tokens and telling the LLM, ‘This is image embedding, please pretend you understand it’. This is not multimodal understanding.<br>
-To address the above fundamental wrongness, we propose MedNet as multimodal ViT backbone for real-world bio signal processing. Dataset from `either google / meta’s research glasses`.<br>
-Dataset, UKB-RAP, https://www.ukbiobank.ac.uk/use-our-data/research-analysis-platform/, ukbiobank tier 1, 2D<br>
+> LLM stands for Discrete Symbolic Model, but images/depth/point clouds/continuous signals are data in continuous space.<br>
+> Forcibly tokenizing continuous space into LLM is incorrect from an information theory perspective. The traditional transformer can only deal with softmax(QKᵀ)V for the information output. <br>
+> Fusion Transformer in latent-to-latent for ViT/other cv feature extractor to language tokens alignment. Use Continuous Encoder → Fake Token → Attention Trick to make LLM see the failure of continuous information but still effectively hack it.<br>
+> It's like turning an image into 6 random tokens and telling the LLM, ‘This is image embedding, please pretend you understand it’. This is not multimodal understanding.<br>
+
+<br>
+
+> To address the above fundamental wrongness, we propose MedNet as multimodal ViT backbone for real-world bio signal processing. Dataset from `either google / meta’s research glasses`.<br>
+> Dataset, UKB-RAP, https://www.ukbiobank.ac.uk/use-our-data/research-analysis-platform/, ukbiobank tier 1, 2D<br>
 
 <br>
 
