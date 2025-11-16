@@ -41,7 +41,7 @@ supervisors: ViT author Xiaohua Zhai学长 if available, prof. Davide Scaramuzza
 ## Datasets in Use by Nov 2025<br>
 
 > Google / Meta’s Aria gen 2 research glasses<br>
-> UKB-RAP, https://www.ukbiobank.ac.uk/use-our-data/research-analysis-platform/, ukbiobank tier 1, 2D<br>
+> UKB-RAP, https://www.ukbiobank.ac.uk/use-our-data/research-analysis-platform/, ukbiobank tier 1<br>
 > Cardiac MRI using the Swiss Heart Study<br>
 
 <br>
