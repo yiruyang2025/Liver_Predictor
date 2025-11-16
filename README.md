@@ -4,7 +4,7 @@
 
 Nov 2025 - Feb 2026 ｜ AI Center, UZH AI, USZ | NeurIPS May 2026, ECCV Mar 26, master thesis
 
-co-first authors: Yiru Yang, (dhia, songyou peng学长 if available),<br>
+co-first authors: Yiru Yang, (dhia, songyou peng学长 & Xiaohua Zhai学长 if available),<br>
 authors: xxx, <br>
 supervisors: prof. Davide Scaramuzza, Dr. Wei Wei, Dr. Yong Wang<br>
 
