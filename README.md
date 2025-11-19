@@ -6,7 +6,7 @@ Nov 2025 - Feb 2026 ｜ AI Center, UZH AI, USZ ｜ NeurIPS May 2026, ECCV Mar 26
 
 co-first authors: Yiru Yang, (dhia, songyou peng学长 if available),(Taein Kwon)<br>
 authors: xxx, <br>
-supervisors: ViT author Xiaohua Zhai学长 if available, prof. Davide Scaramuzza, <br>
+supervisors: ViT author Xiaohua Zhai学长 if available, prof. Davide Scaramuzza, postdoc. Wen Guo,  <br>
 
 
 </div>
