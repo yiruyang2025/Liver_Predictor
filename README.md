@@ -2,13 +2,13 @@
   
 # 3D_LLM: A Large-scale Multi-modal LLM encoding 3D Clinic Data
 
-Test on Disease Prediction, ViT backbone, with Semantic Awareness
+Test on Disease Prediction, ViT backbone, (with Semantic Awareness)
 
-Nov 2025 - Mar 2026 ｜ AI Center, UZH AI, CVG, ETHz SCAI Lab ｜ NeurIPS May 2026, ECCV Mar 26, master thesis
+Nov 2025 - Feb 2026 ｜ AI Center, UZH AI, CVG, SCAI ｜ NeurIPS May 2026, ECCV Mar 26
 
-co-first authors: Yiru Yang, (dhia, songyou peng学长 if available),(Taein Kwon)<br>
+co-first authors: Yiru Yang, Wen Guo, (dhia, songyou peng学长 if available),(Tianlin Liu, Taein Kwon)<br>
 authors: xxx, <br>
-supervisors: ViT author Xiaohua Zhai学长 if available, prof. Davide Scaramuzza, postdoc. Wen Guo, postdoc.   <br>
+supervisors: ViT author Xiaohua Zhai学长 if available, Yanke Li, prof. Davide Scaramuzza <br>
 
 
 </div>
