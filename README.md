@@ -4,7 +4,7 @@
 
 A Tiny ViT
 
-Nov 2025 - Feb 2026 ｜ AI Center, UZH AI, CVG, SCAI ｜ NeurIPS May 2026, ECCV Mar 26
+AI Center, UZH AI, CVG, SCAI ｜ NeurIPS May 2026, ECCV Mar 26
 
 co-first authors: Yiru Yang, Wen Guo, (dhia, songyou peng学长 if available),(Tianlin Liu, Taein Kwon)<br>
 authors: xxx, <br>
