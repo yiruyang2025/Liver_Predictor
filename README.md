@@ -13,10 +13,22 @@ Yiru Yang, Wei Wei, Yong Wang, (dhia, songyou peng if available), ViT author, (p
 
 <br>
 
-## Structure
+## Structure - Zip file for conference submission
 
 ```
-
+Liver_transplantability/
+├── data/
+│   └── donors.csv
+│
+├── src/
+│   ├── data_loader.py
+│   ├── data.json
+│   ├── model.py
+│   ├── train.py
+│   └── evaluate.py
+│
+├── requirements.txt
+└── README.md
 ```
 
 <br>
