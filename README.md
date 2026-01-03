@@ -1,6 +1,6 @@
 <div align="center">
   
-### Self-supervised Model Predicting Liver Transplantability Based On Transplant Donor Medical Data
+## Self-supervised Model Predicting Liver Transplantability Based On Transplant Donor Medical Data
 
 University of Zurich, University Hospital of Zurich, ETH AI Center
 
