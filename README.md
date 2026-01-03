@@ -2,11 +2,10 @@
   
 # Self-supervised Model Predicting Liver Transplantability Based On Transplant Donor Medical Data
 
-A Tiny ViT for multi-modal medical data classification
+University of Zurich, University Hospital of Zurich, ETH AI Center
+ICML Jan, NeurIPS May, ECCV Mar 2026
 
-University of Zurich, University Hospital of Zurich, ETH AI Center ｜ ICML Jan, NeurIPS May, ECCV Mar 2026
-
-Yiru Yang, Wei Wei, Yong Wang, (dhia, songyou peng if available), ViT author, (prof. Davide Scaramuzza)
+Yiru Yang, Wei Wei, Yong Wang, (prof. Davide Scaramuzza)
 
 
 </div>
