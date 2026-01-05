@@ -6,7 +6,7 @@ University of Zurich, University Hospital of Zurich, ETH AI Center
 
 ICML Jan, NeurIPS May, ECCV Mar 2026
 
-**Yiru Yang, Wei Wei, Yong Wang, (prof. Davide Scaramuzza)**
+**Wei Wei, Yiru Yang, Yong Wang, (prof. Davide Scaramuzza)**
 
 
 </div>
