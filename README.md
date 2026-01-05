@@ -103,7 +103,7 @@ make -j4
 - [1] Multimodal LLMs for health grounded in individual-specific data, 2023.
 - [2] A Simple Framework for Contrastive Learning of Visual Representations. ICML 2020.
 - [3] What Makes for Good Views for Contrastive Learning? NeurIPS 2020.
-- [4] 📍 Data-Efficient Reinforcement Learning with Self-Supervised Predictive Representations. NeurIPS 2021.
+- [4] Data-Efficient Reinforcement Learning with Self-Supervised Predictive Representations. NeurIPS 2021.
 - [5] VICReg: Variance-Invariance-Covariance Regularization for Self-Supervised Learning. ICLR 2022.
 - [6] Teras: A Unified Deep Learning Library for Tabular Data, https://github.com/KhawajaAbaid/teras
 
