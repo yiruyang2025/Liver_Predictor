@@ -27,15 +27,12 @@ All experimental results reported in the paper were obtained using confidential 
 
 ```
 Liver_transplantability/
-│
-├── data/
-│   ├── README.md               
+├── data/            
 │   ├── schema.json             
-│   ├── example_donor.json    
+│   └── example_donor.json
 │
 ├── src/
 │   ├── __init__.py
-│   │
 │   ├── data_loader.py           # JSON → feature vector
 │   ├── ssl_encoder.py           # SSL backbone
 │   ├── ssl_objectives.py        # contrastive / masking
