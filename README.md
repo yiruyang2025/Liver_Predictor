@@ -13,22 +13,44 @@ ICML Jan, NeurIPS May, ECCV Mar 2026
 
 <br>
 
+## Data Availability
+
+Due to strict clinical governance and patient confidentiality, raw donor data and PDF-derived JSON files cannot be shared. This repository provides:
+- complete preprocessing and modeling code
+- full data schema
+- synthetic example donors
+All experimental results reported in the paper were obtained using confidential hospital-internal data under approved protocols.
+
+<br>
+
 ## Structure - Zip file for conference submission
 
 ```
 Liver_transplantability/
+│
 ├── data/
-│   └── donors.csv
+│   ├── README.md               
+│   ├── schema.json             
+│   ├── example_donor.json    
 │
 ├── src/
-│   ├── data_loader.py
-│   ├── data.json
-│   ├── model.py
-│   ├── train.py
-│   └── evaluate.py
+│   ├── __init__.py
+│   │
+│   ├── data_loader.py           # JSON → feature vector
+│   ├── ssl_encoder.py           # SSL backbone
+│   ├── ssl_objectives.py        # contrastive / masking
+│   ├── classifier.py            # TX / NTX head
+│   ├── train_ssl.py             # self-supervised pretraining
+│   ├── train_classifier.py      # downstream prediction
+│   ├── evaluate.py              # LOOCV / metrics
+│   └── utils.py                 # common helpers
+│
+├── experiments/
+│   └── train.sh         
 │
 ├── requirements.txt
-└── README.md
+├── README.md
+└── LICENSE
 ```
 
 <br>
