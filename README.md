@@ -57,17 +57,17 @@ Liver_transplantability/
 
 ## Abstract
 
-> LLM stands for Discrete Symbolic Model, but images/depth/point clouds/continuous signals are data in continuous space.<br>
+> LLM stands for Discrete Symbolic Model, but images / depth / point clouds / continuous signals are data in continuous space.<br>
 
 > Forcibly tokenizing continuous space into LLM is incorrect from an information theory perspective. The traditional transformer can only deal with softmax(QKᵀ)V for the information output. <br>
 
-> Fusion Transformer in latent-to-latent for ViT/other cv feature extractor to language tokens alignment. Use Continuous Encoder → Fake Token → Attention Trick to make LLM see the failure of continuous information but still effectively hack it.<br>
+> Fusion Transformer in latent-to-latent for ViT / other cv feature extractor to language tokens alignment. Use Continuous Encoder → Fake Token → Attention Trick to make LLM see the failure of continuous information but still effectively hack it.<br>
 
 > It's like turning an image into 6 random tokens and telling the LLM, ‘This is image embedding, please pretend you understand it’. This is not multimodal understanding.<br>
 
 <br>
 
-> To address the above fundamental wrongness, we propose ★MedNet as multimodal ViT backbone for real-world bio signal processing.<br>
+> To address the above fundamental wrongness, we propose ★ Liver Donor, a SSL model for liver transplantability prediction under extreme data scarcity.<br>
 
 
 <br>
@@ -95,7 +95,7 @@ make -j4
 
 ## Readings
 [1] Multimodal LLMs for health grounded in individual-specific data, 2023. https://arxiv.org/pdf/2307.09018
-
+[2] Teras: A Unified Deep Learning Library for Tabular Data, https://github.com/KhawajaAbaid/teras
 
 
 <br><br><br>
