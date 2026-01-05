@@ -1,6 +1,6 @@
 <div align="center">
   
-## Learning in Latent: Self-supervised Model Predicting Liver Transplantability Based On Transplant Donor Medical Data
+## Liver Donor: Self-supervised Model Predicting Liver Transplantability Based On Transplant Donor Medical Data
 
 University of Zurich, University Hospital of Zurich, ETH AI Center
 
@@ -75,10 +75,7 @@ Liver_transplantability/
 
 > To address the above fundamental wrongness, we propose ★ Liver Donor, a SSL model for liver transplantability prediction under extreme data scarcity.<br>
 
-
 <br>
-
-
 
 ## Get Started
 
