@@ -1,5 +1,4 @@
 ## data_loader.py
 
-
-inductive bias
-JSON → feature vector, Definition of views and invariances
+JSON → feature vector
+Inductive bias Clarification = assumptions that guide learning beyond the data itself
