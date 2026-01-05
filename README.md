@@ -1,6 +1,6 @@
 <div align="center">
   
-## Self-supervised Model Predicting Liver Transplantability Based On Transplant Donor Medical Data
+## Learning on Manifold: Self-supervised Model Predicting Liver Transplantability Based On Transplant Donor Medical Data
 
 University of Zurich, University Hospital of Zurich, ETH AI Center
 
@@ -21,6 +21,13 @@ Due to strict clinical governance and patient confidentiality, raw donor data an
 - synthetic example donors<br>
 
 All experimental results reported in the paper were obtained using confidential hospital-internal data under approved protocols.
+
+<br>
+
+## Overview
+
+- We learn a donor state manifold using 39 DIFs, and then align it to the real transplantation decision with minimal supervision.
+
 
 <br>
 
