@@ -25,13 +25,24 @@ All experimental results reported in the paper were obtained using confidential 
 
 <br>
 
+
+<p align="left">
+  <img src="https://github.com/yiruyang2025/Liver_Predictor/blob/main/assets/1.png" alt="Project 1 Visualization" width="75%">
+</p>
+
+
+
+
+https://github.com/yiruyang2025/Liver_Predictor/blob/main/assets/1.png
+
+<br>
+
 ## Overview
 
 - Our work follows the DeepMind line of representation-first learning, where structure is learned prior to task supervision, and labels are used only to minimally align representations to downstream decisions under extreme data scarcity
-- We learn the donor representation encoder, and then use the binary transplantability classification (TX vs. NTX) only to test whether it is meaningful
+- We learnt A SSL Donor Representation Encoder, and then use the binary transplantability classification (TX vs. NTX) to test
 
-**Key Words**: Representatio Learning, Data Scarcity, Self-supervised Learning
-
+**Key Words**: Representation Learning, Data Scarcity, Self-supervised Learning
 
 <br>
 
