@@ -23,19 +23,12 @@ Due to strict clinical governance and patient confidentiality, raw donor data an
 
 All experimental results reported in the paper were obtained using confidential hospital-internal data under approved protocols
 
-<br>
-
 
 <p align="left">
-  <img src="https://github.com/yiruyang2025/Liver_Predictor/blob/main/assets/1.png" alt="Project 1 Visualization" width="75%">
+  <img src="https://github.com/yiruyang2025/Liver_Predictor/blob/main/assets/1.png" alt="Project 1 Visualization" width="60%">
 </p>
 
 
-
-
-https://github.com/yiruyang2025/Liver_Predictor/blob/main/assets/1.png
-
-<br>
 
 ## Overview
 
