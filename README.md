@@ -50,9 +50,12 @@ Liver_transplantability/
 │   ├── train_classifier.py      # downstream prediction
 │   ├── evaluate.py              # LOOCV / metrics
 │   └── utils.py                 # common helpers
++   ├── ablation.py           
++   └── compare_results.py 
 │
 ├── cross_validation/
-│   └── run_loocv.sh             # LOOCV = gold standard when N < 100
+│   ├── run_loocv.sh             # LOOCV = gold standard when N < 100
++   └── run_ablation.sh
 │
 ├── requirements.txt
 ├── README.md
