@@ -119,9 +119,8 @@ make -j4
 - [5] A Survey on Self-Supervised Representation Learning, 2023.
 - [6] TabPFN – Hollmann et al., ICLR 2023
 - [7] A Simple Framework for Contrastive Learning of Visual Representations. ICML 2020.
-- [8] Data-Efficient Reinforcement Learning with Self-Supervised Predictive Representations. NeurIPS 2021.
-- [9] Revisiting Deep Learning Models for Tabular Data, NeurIPS 2021.
-- [10] Teras: A Unified Deep Learning Library for Tabular Data, https://github.com/KhawajaAbaid/teras
+- [8] Revisiting Deep Learning Models for Tabular Data, NeurIPS 2021.
+- [9] Teras: A Unified Deep Learning Library for Tabular Data, https://github.com/KhawajaAbaid/teras
 
 
 <br><br><br>
