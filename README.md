@@ -87,7 +87,7 @@ Liver_predictor/
 
 <br>
 
-> To address the above fundamental wrongness, we propose ★ Liver Donor, a SSL model for liver transplantability prediction under extreme data scarcity.<br>
+> To address the above fundamental wrongness, we propose ★ Liver Predictor, a SSL model for liver transplantability prediction under extreme data scarcity.<br>
 
 <br>
 
