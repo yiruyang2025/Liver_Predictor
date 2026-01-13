@@ -113,7 +113,7 @@ make -j4
 ## Readings
 
 - [1] Multimodal LLMs for health grounded in individual-specific data, 2023.
-- [2] Visual and Semantic Similarity in ImageNet, 2011, https://research.google/pubs/visual-and-semantic-similarity-in-imagenet/.
+- [2] Visual and Semantic Similarity in ImageNet, 2011.
 - [3] 📍 ViT: An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale, 2021.
 - [4] SimCLR – Chen et al., ICML 2020.
 - [5] BYOL – Grill et al., NeurIPS 2020.
