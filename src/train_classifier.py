@@ -8,6 +8,7 @@ import argparse
 from data_loader import create_dataloaders
 from ssl_encoder import SSLEncoder
 from classifier import TransplantabilityClassifier
+
 class ClassifierTrainer:
  def __init__(self,model,device,output_dir):
   self.model=model.to(device)
@@ -15,6 +16,7 @@ class ClassifierTrainer:
   self.output_dir=Path(output_dir)
   self.output_dir.mkdir(parents=True,exist_ok=True)
   self.history={'loss':[],'acc':[],'val_loss':[],'val_acc':[]}
+
  def train(self,train_loader,val_loader,optimizer,scheduler,criterion,epochs=100):
   best_val_acc=0.0
   patience=15
@@ -56,6 +58,7 @@ class ClassifierTrainer:
      break
   self._save_checkpoint('final_classifier.pt')
   return self.history
+
  def _validate(self,val_loader,criterion):
   self.model.eval()
   val_loss=0.0
@@ -71,9 +74,11 @@ class ClassifierTrainer:
     val_correct+=(pred==y).sum().item()
     val_total+=y.shape[0]
   return val_loss/len(val_loader),val_correct/val_total
+
  def _save_checkpoint(self,filename):
   path=self.output_dir/filename
   torch.save(self.model.state_dict(),path)
+
 def main():
  parser=argparse.ArgumentParser()
  parser.add_argument('--json_files',type=str,nargs='+',required=True)
@@ -113,5 +118,6 @@ def main():
  with open(Path(args.output_dir)/'training_history.json','w') as f:
   json.dump(history,f)
  print(f"Classifier training complete. Model saved to {args.output_dir}")
+
 if __name__=='__main__':
  main()
