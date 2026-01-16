@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+
 class SSLEncoder(nn.Module):
  def __init__(self,input_dim,hidden_dims=[512,256,128],output_dim=128,dropout=0.1):
   super().__init__()
@@ -16,8 +17,10 @@ class SSLEncoder(nn.Module):
   self.encoder=nn.Sequential(*layers)
   self.output_dim=output_dim
   self.input_dim=input_dim
+ 
  def forward(self,x):
   return self.encoder(x)
+
 class SSLEncoderWithProjection(nn.Module):
  def __init__(self,input_dim,hidden_dims=[512,256,128],output_dim=128,projection_dim=64):
   super().__init__()
@@ -29,6 +32,7 @@ class SSLEncoderWithProjection(nn.Module):
   )
   self.output_dim=output_dim
   self.projection_dim=projection_dim
+
  def forward(self,x,return_projection=False):
   z=self.encoder(x)
   if return_projection:
