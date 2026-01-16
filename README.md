@@ -36,7 +36,7 @@ All experimental results reported in the paper were obtained using confidential 
 - Our work follows the DeepMind line of representation-first learning, where structure is learned prior to task supervision, and labels are used only to minimally align representations to downstream decisions under extreme data scarcity
 - We learnt A SSL Donor Representation Encoder, and then use the binary transplantability classification (TX vs. NTX) to test
 
-**Key Words**: Representation Learning, Data Scarcity, Self-supervised Learning
+**Key Words**: Representation Learning • Data Scarcity • Self-supervised Learning • Liver Organ suitability • Extreme Low-data Regime
 
 <br>
 
