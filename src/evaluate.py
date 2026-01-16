@@ -9,22 +9,26 @@ import matplotlib.pyplot as plt
 from data_loader import DonorDataset
 from ssl_encoder import SSLEncoder
 from classifier import TransplantabilityClassifier
+
 class LOOCVEvaluator:
  def __init__(self,model,device):
   self.model=model.to(device)
   self.device=device
   self.model.eval()
+  
  def evaluate_loocv(self,dataset):
   n=len(dataset)
   predictions=[]
   ground_truth=[]
   probabilities=[]
+  
   for i in range(n):
    train_indices=list(range(n))
    train_indices.remove(i)
    test_x,test_y=dataset[i]
    test_x=test_x.unsqueeze(0).to(self.device)
    test_y=test_y.item()
+   
    with torch.no_grad():
     logits=self.model(test_x)
     probs=torch.softmax(logits,dim=1)
@@ -32,13 +36,16 @@ class LOOCVEvaluator:
    predictions.append(pred)
    ground_truth.append(test_y)
    probabilities.append(probs[0,1].item())
+   
   return np.array(predictions),np.array(ground_truth),np.array(probabilities)
+
  def compute_metrics(self,predictions,ground_truth,probabilities):
   accuracy=accuracy_score(ground_truth,predictions)
   sensitivity=sensitivity_score(ground_truth,predictions,average='binary',zero_division=0)
   specificity=specificity_score(ground_truth,predictions,average='binary',zero_division=0)
   precision=precision_score(ground_truth,predictions,average='binary',zero_division=0)
   f1=f1_score(ground_truth,predictions,average='binary',zero_division=0)
+ 
   if len(np.unique(ground_truth))>1:
    auc_roc=roc_auc_score(ground_truth,probabilities)
   else:
@@ -57,6 +64,7 @@ class LOOCVEvaluator:
    'true_positives':int(tp)
   }
   return metrics
+
  def plot_roc_curve(self,ground_truth,probabilities,output_path):
   if len(np.unique(ground_truth))<2:
    print("Cannot plot ROC curve with single class")
@@ -74,6 +82,7 @@ class LOOCVEvaluator:
   plt.legend(loc="lower right")
   plt.savefig(output_path)
   plt.close()
+
 def main():
  parser=argparse.ArgumentParser()
  parser.add_argument('--json_files',type=str,nargs='+',required=True)
@@ -83,6 +92,7 @@ def main():
  parser.add_argument('--input_dim',type=int,default=60)
  parser.add_argument('--encoder_output_dim',type=int,default=128)
  parser.add_argument('--device',type=str,default='cuda' if torch.cuda.is_available() else 'cpu')
+
  args=parser.parse_args()
  device=torch.device(args.device)
  output_dir=Path(args.output_dir)
@@ -92,9 +102,11 @@ def main():
  model=TransplantabilityClassifier(encoder,encoder_output_dim=args.encoder_output_dim)
  model.load_state_dict(torch.load(args.classifier_path,map_location=device))
  model=model.to(device)
+
  evaluator=LOOCVEvaluator(model,device)
  predictions,ground_truth,probabilities=evaluator.evaluate_loocv(dataset)
  metrics=evaluator.compute_metrics(predictions,ground_truth,probabilities)
+
  print("\nLOOCV Evaluation Results:")
  print(f"Accuracy: {metrics['accuracy']:.4f}")
  print(f"Sensitivity: {metrics['sensitivity']:.4f}")
@@ -103,9 +115,11 @@ def main():
  print(f"F1-Score: {metrics['f1']:.4f}")
  print(f"AUC-ROC: {metrics['auc_roc']:.4f}")
  print(f"Confusion Matrix: TP={metrics['true_positives']} FP={metrics['false_positives']} FN={metrics['false_negatives']} TN={metrics['true_negatives']}")
+
  with open(output_dir/'metrics.json','w') as f:
   json.dump(metrics,f,indent=2)
  evaluator.plot_roc_curve(ground_truth,probabilities,output_dir/'roc_curve.png')
- print(f"\nResults saved to {output_dir}")
+  print(f"\nResults saved to {output_dir}")
+
 if __name__=='__main__':
  main()
