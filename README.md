@@ -124,6 +124,7 @@ make -j4
 - [10] A Simple Framework for Contrastive Learning of Visual Representations. ICML 2020.
 - [11] Revisiting Deep Learning Models for Tabular Data, NeurIPS 2021.
 - [12] Teras: A Unified Deep Learning Library for Tabular Data, https://github.com/KhawajaAbaid/teras
+- [13] Graphs Generation, https://answerthis.io/home-2?ref=faheem42.
 
 
 <br><br><br>
