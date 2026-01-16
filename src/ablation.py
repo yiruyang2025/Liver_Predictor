@@ -12,7 +12,6 @@ from sklearn.metrics import accuracy_score, sensitivity_score, specificity_score
 from sklearn.metrics import precision_score, f1_score, roc_auc_score, confusion_matrix
 
 class MinimalMLP(nn.Module):
-   
     def __init__(self, input_dim: int, num_classes: int = 2, hidden_dim: int = 64,
                  num_layers: int = 1, dropout: float = 0.3, l2_weight: float = 1e-4):
         super().__init__()
