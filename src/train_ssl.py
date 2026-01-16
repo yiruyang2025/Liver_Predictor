@@ -8,6 +8,7 @@ import argparse
 from data_loader import create_dataloaders
 from ssl_encoder import create_ssl_encoder_with_projection
 from ssl_objectives import ContrastivePretrainingObjective,HybridObjective
+
 class SSLTrainer:
  def __init__(self,model,device,output_dir):
   self.model=model.to(device)
@@ -15,6 +16,7 @@ class SSLTrainer:
   self.output_dir=Path(output_dir)
   self.output_dir.mkdir(parents=True,exist_ok=True)
   self.history={'loss':[],'val_loss':[]}
+
  def train(self,train_loader,val_loader,objective,optimizer,scheduler,epochs=100):
   best_loss=float('inf')
   patience=10
@@ -51,6 +53,7 @@ class SSLTrainer:
      break
   self._save_checkpoint('final_encoder.pt')
   return self.history
+
  def _validate(self,val_loader,objective):
   self.model.eval()
   val_loss=0.0
@@ -64,9 +67,11 @@ class SSLTrainer:
      total_loss=objective(x,self.model)
     val_loss+=total_loss.item()
   return val_loss/len(val_loader)
+
  def _save_checkpoint(self,filename):
   path=self.output_dir/filename
   torch.save(self.model.state_dict(),path)
+
 def main():
  parser=argparse.ArgumentParser()
  parser.add_argument('--json_files',type=str,nargs='+',required=True)
@@ -104,5 +109,6 @@ def main():
  with open(Path(args.output_dir)/'training_history.json','w') as f:
   json.dump(history,f)
  print(f"SSL pretraining complete. Model saved to {args.output_dir}")
+
 if __name__=='__main__':
  main()
